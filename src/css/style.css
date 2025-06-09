@@ -4,6 +4,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* bg-color and color */
@@ -36,6 +37,7 @@ body {
   left: 0;
   transform: translateY(-50%);
   display: flex;
+  z-index: 9999;
 }
 
 .side-bar .icons {
@@ -50,7 +52,12 @@ body {
   color: var(--white);
 }
 
-.side-bar .icons .icon:hover {
+.side-bar .icons a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.side-bar .icons i:hover {
   color: var(--midnight-blue);
   transition: 0.3s all ease-in-out;
 }
@@ -164,6 +171,48 @@ body {
   z-index: -1;
 }
 
+/* about section */
+.about {
+  padding: 6rem 17%;
+}
+
+.about h2 {
+  font-size: 1.5rem;
+  color: var(--dodger-blue);
+}
+
+.about .row {
+  display: flex;
+  flex-direction: row;
+}
+
+.about .row .content h3 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.about .row .content p span {
+  display: block;
+}
+
+.about .row .content .icon {
+  padding: 2rem 0;
+}
+
+.about .row .content .icon a {
+  text-decoration: none;
+  color: var(--midnight-blue);
+  margin: 0 0.3rem;
+}
+
+.about .row .content .icon a i {
+  font-size: 1.8rem;
+}
+
+.about .row .content .icon a:hover {
+  color: var(--dodger-blue);
+}
+
 /* keyframes bar progress scroll */
 @keyframes progress {
   0% {
@@ -190,7 +239,7 @@ body {
     border-radius: 0;
   }
 
-  .side-bar .icons i {
+  .side-bar .icons a {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -215,6 +264,24 @@ body {
 
   .hero .container .content {
     margin-top: 1rem;
+  }
+
+  /* about section */
+  .about {
+    padding: 0 7%;
+  }
+
+  .about .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about .row .content p {
+    margin-bottom: 0.8rem;
+  }
+
+  .about .row .content .icon {
+    padding: 0.4rem 0;
   }
 }
 
