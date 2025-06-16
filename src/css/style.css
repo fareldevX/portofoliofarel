@@ -13,6 +13,7 @@
   --midnight-blue: #000036;
   --gray: #a0a0a0;
   --white: #fff;
+  --Raisin-black: #242124;
 }
 
 body {
@@ -262,6 +263,65 @@ body {
   margin-top: 0.8rem;
 }
 
+/* clients section */
+.clients {
+  padding-bottom: 14rem;
+}
+
+.clients .container-clients {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Raisin-black);
+  padding: 2rem;
+}
+
+.clients .container-clients .title {
+  text-align: center;
+}
+
+.clients .container-clients .title h4 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  color: var(--dodger-blue);
+}
+
+.clients .container-clients .title h2 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+  color: var(--white);
+}
+
+.clients .container-clients .title p {
+  color: var(--gray);
+}
+
+.clients .container-clients .container-logo {
+  margin-top: 1rem;
+}
+
+.clients .container-clients .container-logo .logo-clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.clients .container-clients .container-logo .logo-clients a {
+  color: var(--gray);
+  opacity: 60%;
+  margin: 0.5rem 1rem;
+  transition: 0.3s all ease-in-out;
+}
+
+.clients .container-clients .container-logo .logo-clients a:hover {
+  opacity: 100%;
+}
+
+.clients .container-clients .container-logo .logo-clients a img {
+  width: 40px;
+  height: 40px;
+}
 /* keyframes bar progress scroll */
 @keyframes progress {
   0% {
@@ -274,6 +334,10 @@ body {
 
 /* media screen responsive width 460px */
 @media screen and (max-width: 460px) {
+  html {
+    font-size: 85%;
+  }
+
   /* side bar */
   .side-bar {
     top: 100%;
@@ -346,6 +410,10 @@ body {
 
 /* media screen responsive width 245px */
 @media screen and (max-width: 245px) {
+  html {
+    font-size: 80%;
+  }
+
   .side-bar {
     background-color: var(--dodger-blue);
   }
